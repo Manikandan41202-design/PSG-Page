@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('IMG/bg_img.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image tiling */
+    height: 100vh; /* Make sure the background covers the entire viewport height */
+    overflow: hidden; /* Prevent scrolling for extra space */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#162b53;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px; /* Optional: Define container height */
+}
+
+.logo{
+  width: 150px; /* Set the logo's width */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure responsiveness */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color:  #f6f3ee;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 17px 10px;
+  border-radius: 10%;
+}
+
+.nav-links a:hover{
+  color: #ed8240;
+  background-color:#000000;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color:#000000;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+/* HEAD */
+
+
+.header h1{
+  margin-left: 20px;
+  font-weight: bolder;
+  color: #222222;
+}
+
+.header h1 .tracker{
+  color: #ec752a;
+}
+
+@media screen and (max-width: 768px){
+  .header h1{
+      font-size: 22px;
+      text-align: center;
+  }
+}
+
+.content h4{
+  margin-bottom: 15px;
+  color: #ec752a;
+  font-weight: 600;
+}
+
+.content h6 a{
+  padding: 5px 0;
+  text-decoration: none;
+  color: #333333;
+}
+
+@media screen and (max-width: 768px){
+  .container{
+      text-align: center;
+  }
+  .content{
+      margin-bottom: 30px;
+  }
+}
+
+.footer {
+  background-color: #162b53; /* Dark gray background */
+  padding-bottom: 130px; /* Spacing inside the footer */
+  margin-top: 10px;
+}
+
+footer .contact_us{
+  align-items: center;
+}
+
+footer .contact_us h4,h6 a{
+  color: #DDDDDD;
+  margin-left: 10px;
+}
+
+.contact_us h6 a{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+  .footer{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      padding-bottom: 0px;
+  }
+
+  footer .contact_us h4,h6 a{
+      margin-left: 10px;
+      align-items: center;
+      text-align: center;
+  }
+}
